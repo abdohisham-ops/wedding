@@ -1,37 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f8eee6">
-<title>You're Invited | Abdulrahman & Nadine</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap');
-*{box-sizing:border-box} body{margin:0;min-height:100svh;display:grid;place-items:center;padding:22px;background:radial-gradient(circle at 15% 15%,#fff9f4,#f1dfd3 60%,#e8cdbd);color:#674638;font-family:'Cormorant Garamond',serif}
-.cover{width:min(100%,520px);min-height:690px;border:1px solid #c79b65;border-radius:260px 260px 24px 24px;background:linear-gradient(145deg,#fffaf5,#f8e9de);box-shadow:0 20px 60px #76503b30;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;text-align:center;padding:45px 28px 36px}
-.cover:before,.cover:after{content:"❀";position:absolute;color:#c89b70;font-size:58px;opacity:.65}.cover:before{top:20px;left:25px}.cover:after{right:25px;bottom:20px}
-.eyebrow{letter-spacing:5px;text-transform:uppercase;font-size:13px;margin:28px 0 18px;color:#9b755c}
-h1{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(48px,12vw,72px);line-height:1.08;margin:0;color:#7d5140}
-.amp{font-size:28px;color:#bd9569;margin:5px}
-.rule{width:130px;height:1px;background:#c9a274;margin:24px auto}
-.invite-title{font-size:23px;letter-spacing:2px;text-transform:uppercase;margin:0;color:#805e4d}
-.sub{font-size:19px;margin:14px 0 30px;color:#9b7967}
-.open{border:0;border-radius:40px;padding:15px 38px;background:#855a47;color:#fffaf5;font:600 17px 'Cormorant Garamond',serif;letter-spacing:1.5px;box-shadow:0 8px 20px #855a4740;cursor:pointer;transition:.2s}
-.open:hover{transform:translateY(-2px);background:#704632}
-.small{font-size:13px;letter-spacing:2px;color:#a48672;margin-top:auto}
-.ornament{font-size:32px;color:#c39a6c;margin:12px 0}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#261c1c">
+
+    <title>Abdulrahman & Nadine | Wedding Invitation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background:
+                radial-gradient(ellipse at center, #5a4036 0%, #302323 55%, #171112 100%);
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            color: #f8edda;
+        }
+
+        .invitation-cover {
+            position: relative;
+            width: 100%;
+            max-width: 650px;
+            min-height: 780px;
+            padding: 65px 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            border: 1px solid #c9a45e;
+            outline: 1px solid rgba(201, 164, 94, 0.4);
+            outline-offset: -12px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.04),
+                    transparent 45%,
+                    rgba(0,0,0,0.15)
+                );
+        }
+
+        .corner {
+            position: absolute;
+            color: #d7b878;
+            font-size: 28px;
+        }
+
+        .top-left {
+            top: 30px;
+            left: 35px;
+        }
+
+        .top-right {
+            top: 30px;
+            right: 35px;
+        }
+
+        .bottom-left {
+            bottom: 30px;
+            left: 35px;
+        }
+
+        .bottom-right {
+            bottom: 30px;
+            right: 35px;
+        }
+
+        .flowers {
+            color: #d7b878;
+            font-size: 35px;
+            letter-spacing: 12px;
+            margin-bottom: 35px;
+        }
+
+        .small-title {
+            font-size: 13px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #e8d4ae;
+            margin-bottom: 35px;
+        }
+
+        .name {
+            font-size: clamp(45px, 9vw, 75px);
+            font-weight: 400;
+            font-style: italic;
+            line-height: 1.1;
+            color: #dfbd79;
+        }
+
+        .ampersand {
+            font-size: 35px;
+            font-style: italic;
+            color: #f8edda;
+            margin: 15px 0;
+        }
+
+        .divider {
+            width: 110px;
+            height: 1px;
+            background: #c9a45e;
+            margin: 38px auto;
+        }
+
+        .invitation-text {
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #eadcc5;
+            margin-bottom: 30px;
+        }
+
+        .open-button {
+            display: inline-block;
+            padding: 17px 35px;
+            border: 1px solid #d7b878;
+            background: #d7b878;
+            color: #261c1c;
+            text-decoration: none;
+            font-family: Georgia, serif;
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .open-button:hover {
+            background: transparent;
+            color: #dfbd79;
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 65px;
+            font-size: 11px;
+            letter-spacing: 4px;
+            color: #cbb998;
+        }
+
+        @media (max-width: 500px) {
+            .invitation-cover {
+                min-height: 700px;
+                padding: 50px 20px;
+            }
+
+            .small-title {
+                font-size: 11px;
+                letter-spacing: 3px;
+            }
+
+            .footer {
+                bottom: 55px;
+                font-size: 9px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<main class="cover">
-  <div class="eyebrow">Together with our families</div>
-  <div class="ornament">❦</div>
-  <h1>Abdulrahman</h1><div class="amp">&amp;</div><h1>Nadine</h1>
-  <div class="rule"></div>
-  <p class="invite-title">Wedding Invitation</p>
-  <p class="sub">We joyfully invite you to celebrate<br>the beginning of our forever.</p>
-  <a href="invitation.html" style="text-decoration:none"><button class="open" type="button">OPEN INVITATION&nbsp; ♥</button></a>
-  <div class="small">3 JANUARY 2027 · CAIRO</div>
-</main>
+
+    <main class="invitation-cover">
+
+        <span class="corner top-left">❦</span>
+        <span class="corner top-right">❦</span>
+        <span class="corner bottom-left">❦</span>
+        <span class="corner bottom-right">❦</span>
+
+        <div class="flowers">❧ ❀ ❧</div>
+
+        <p class="small-title">
+            Together with our families
+        </p>
+
+        <h1 class="name">
+            Abdulrahman
+        </h1>
+
+        <div class="ampersand">
+            &
+        </div>
+
+        <h1 class="name">
+            Nadine
+        </h1>
+
+        <div class="divider"></div>
+
+        <p class="invitation-text">
+            Request the pleasure of your company
+        </p>
+
+        <a href="invitation.html" class="open-button">
+            Open Invitation
+        </a>
+
+        <div class="footer">
+            A CELEBRATION OF LOVE
+        </div>
+
+    </main>
+
 </body>
 </html>
