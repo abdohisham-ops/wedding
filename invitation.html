@@ -2,154 +2,326 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#fbf3ed">
-<title>Abdulrahman & Nadine | Wedding Day</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdulrahman & Nadine Wedding</title>
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap');
-:root{--ink:#684738;--gold:#bd9569;--cream:#fffaf6;--rose:#f4e4dc}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(#fffaf6,#f3e4da);color:var(--ink);font-family:'Cormorant Garamond',serif}
-.wrap{max-width:850px;margin:auto;padding:22px}
-.back{display:inline-block;color:#8b6654;text-decoration:none;margin:6px 0 14px;font-size:17px}
-.card{background:#fffaf6;border:1px solid #d8b68e;border-radius:22px;overflow:hidden;box-shadow:0 12px 35px #68473814;margin-bottom:22px}
-.hero{text-align:center;padding:24px 22px 30px}
-.hero img{display:block;width:min(100%,590px);max-height:510px;object-fit:cover;object-position:center 35%;border-radius:16px;margin:0 auto 18px;border:5px solid #f4e5d8}
-h1{font-family:'Great Vibes',cursive;font-size:clamp(48px,10vw,76px);font-weight:400;line-height:1.1;margin:8px 0;color:#81543f}
-.kicker{text-transform:uppercase;letter-spacing:4px;color:#a17d63;font-size:13px}
-.intro{font-size:22px;line-height:1.5;margin:12px auto;max-width:580px}
-.heart{color:#bd8c70;font-size:27px}
-.details{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:24px;text-align:center}
-.detail{padding:10px 6px;border-right:1px solid #ead8c9}.detail:last-child{border:0}
-.icon{font-size:26px;color:#b58b62}.label{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#9a7964;margin:5px}
-.value{font-size:21px;line-height:1.25}
-.section{padding:28px 24px;text-align:center}
-.section h2{font-family:'Great Vibes',cursive;font-size:46px;font-weight:400;margin:0 0 8px;color:#81543f}
-.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:570px;margin:22px auto 6px}
-.timebox{background:#f7ebe3;border:1px solid #e5cdb9;border-radius:14px;padding:16px 6px}
-.number{font:600 clamp(27px,6vw,42px) 'Cormorant Garamond',serif;color:#80543f;display:block}
-.unit{text-transform:uppercase;letter-spacing:1.5px;font-size:12px;color:#9b7967}
-.note{font-size:17px;color:#92715f}
-.btn{display:inline-block;border:0;border-radius:30px;background:#855a47;color:white;text-decoration:none;padding:12px 24px;font:600 17px 'Cormorant Garamond',serif;letter-spacing:1px;margin:8px;cursor:pointer}
-.calendar{display:inline-block;border:1px solid #c9a274;border-radius:16px;padding:14px 18px;margin:14px auto;background:#fffdfb}
-.month{font-size:19px;letter-spacing:2px;text-transform:uppercase;margin-bottom:9px}
-.days{display:grid;grid-template-columns:repeat(7,34px);gap:4px;font-size:15px}
-.days span{padding:7px 0}.dow{color:#ad8a70;font-weight:700}.marked{background:#855a47;color:white;border-radius:50%}
-form{max-width:540px;margin:18px auto 0;text-align:left}
-input,textarea{width:100%;padding:13px 14px;border:1px solid #dfc8b6;border-radius:10px;background:#fffdfb;font:17px 'Cormorant Garamond',serif;color:#684738;margin:7px 0}
-textarea{min-height:110px;resize:vertical}
-form button{width:100%}.status{text-align:center;min-height:24px;font-size:16px;margin-top:10px}
-footer{text-align:center;padding:22px;color:#9b7967;font-size:16px}
-@media(max-width:560px){.details{grid-template-columns:1fr;gap:8px}.detail{border-right:0;border-bottom:1px solid #ead8c9;padding:12px}.detail:last-child{border:0}.days{grid-template-columns:repeat(7, minmax(28px,1fr))}}
+*{box-sizing:border-box}
+body{
+    margin:0;
+    background:#f8f1e7;
+    color:#45352e;
+    font-family:Georgia,serif;
+    text-align:center;
+}
+.hero{
+    background:linear-gradient(145deg,#302020,#684b3e);
+    color:#f8edda;
+    padding:55px 15px 45px;
+}
+.hero h1{
+    color:#dfbd79;
+    font-size:clamp(38px,8vw,60px);
+    font-style:italic;
+    font-weight:normal;
+    margin:12px 0;
+}
+.hero .amp{font-size:27px}
+.kicker{
+    color:#e5c98e;
+    letter-spacing:4px;
+    font-size:11px;
+    text-transform:uppercase;
+}
+.container{
+    max-width:650px;
+    margin:auto;
+    padding:20px 15px 45px;
+}
+.card{
+    background:#fffdf8;
+    border:1px solid #e3d2b4;
+    padding:30px 18px;
+    margin:22px 0;
+    box-shadow:0 8px 25px rgba(70,45,30,.06);
+}
+h2,h3{
+    color:#98734a;
+    font-weight:normal;
+    font-style:italic;
+}
+h2{font-size:30px}
+h3{font-size:27px;margin:0 0 15px}
+.photo{
+    display:block;
+    width:100%;
+    max-width:480px;
+    height:300px;
+    object-fit:cover;
+    margin:20px auto 0;
+    border:1px solid #d5bd91;
+}
+.date{
+    color:#b18b50;
+    font-size:27px;
+    margin:15px 0;
+}
+.time{
+    letter-spacing:3px;
+    font-size:14px;
+}
+.countdown{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:7px;
+    max-width:480px;
+    margin:25px auto 10px;
+}
+.unit{
+    background:#f5eee3;
+    padding:14px 3px;
+    border:1px solid #eadcc2;
+}
+.unit strong{
+    display:block;
+    color:#98734a;
+    font-size:29px;
+}
+.unit span{
+    font-family:Arial,sans-serif;
+    font-size:10px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+.calendar{
+    width:100%;
+    max-width:400px;
+    margin:20px auto;
+    border-collapse:collapse;
+    font-family:Arial,sans-serif;
+}
+.calendar th,.calendar td{
+    padding:11px 4px;
+    border:1px solid #eee5d8;
+}
+.calendar th{color:#98734a}
+.marked{
+    background:#b9904c;
+    color:white;
+    border-radius:50%;
+    font-weight:bold;
+}
+.button{
+    display:inline-block;
+    background:#b9904c;
+    color:white;
+    text-decoration:none;
+    padding:15px 28px;
+    margin:15px 5px 5px;
+    letter-spacing:2px;
+    font-size:11px;
+    text-transform:uppercase;
+    transition:.2s;
+}
+.button:hover{background:#80613e}
+.note{
+    font-family:Arial,sans-serif;
+    font-size:12px;
+    color:#806f60;
+    margin-top:17px;
+}
+footer{
+    color:#98734a;
+    letter-spacing:2px;
+    font-size:11px;
+    padding:25px 10px;
+}
+@media(max-width:400px){
+    .card{padding:25px 12px}
+    .unit strong{font-size:23px}
+    .calendar th,.calendar td{padding:9px 2px;font-size:12px}
+}
 </style>
 </head>
+
 <body>
-<div class="wrap">
-<a class="back" href="index.html">← Back to the invitation cover</a>
-<section class="card hero">
-  <div class="kicker">The pleasure of your company is requested</div>
-  <img src="couple_wedding_art.jpg" alt="Illustration of Abdulrahman and Nadine as a wedding couple">
-  <h1>Abdulrahman &amp; Nadine</h1>
-  <div class="heart">♡</div>
-  <p class="intro">With joyful hearts, we invite you to share a beautiful day and celebrate the beginning of our life together.</p>
-</section>
-<section class="card details">
-  <div class="detail"><div class="icon">♧</div><div class="label">Date</div><div class="value">Sunday<br>3 January 2027</div></div>
-  <div class="detail"><div class="icon">◷</div><div class="label">Time</div><div class="value">3:00 PM</div></div>
-  <div class="detail"><div class="icon">⌖</div><div class="label">Venue</div><div class="value">Gardenia Wedding Halls<br>La Violla · Almaza, Cairo</div></div>
-</section>
-<section class="card section">
-  <h2>Counting the moments</h2>
-  <div class="note">Until we celebrate together</div>
-  <div class="countdown" aria-live="polite">
-    <div class="timebox"><span class="number" id="days">—</span><span class="unit">Days</span></div>
-    <div class="timebox"><span class="number" id="hours">—</span><span class="unit">Hours</span></div>
-    <div class="timebox"><span class="number" id="minutes">—</span><span class="unit">Minutes</span></div>
-    <div class="timebox"><span class="number" id="seconds">—</span><span class="unit">Seconds</span></div>
-  </div>
-  <div class="note" id="countdown-message"></div>
-</section>
-<section class="card section">
-  <h2>Save the date</h2>
-  <div class="calendar">
-    <div class="month">January 2027</div>
-    <div class="days">
-      <span class="dow">S</span><span class="dow">M</span><span class="dow">T</span><span class="dow">W</span><span class="dow">T</span><span class="dow">F</span><span class="dow">S</span>
-      <span></span><span></span><span></span><span></span><span></span><span>1</span><span>2</span>
-      <span class="marked">3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
-      <span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span>
-      <span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span>
-      <span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
-      <span>31</span>
-    </div>
-  </div><br>
-  <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Gardenia+Wedding+Halls+La+Violla+Almaza+Cairo" target="_blank" rel="noopener">Open venue map</a>
-  <a class="btn" href="wedding.ics" download>Add to calendar</a>
-</section>
-<section class="card section">
-  <h2>Leave us a wish</h2>
-  <p class="note">Your kind words will mean so much to us.</p>
-  <form id="guestbook" action="https://formsubmit.co/ajax/abdohisham237@gmail.com" method="POST">
-    <input type="hidden" name="_subject" value="Wedding wishes - Abdulrahman & Nadine">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-    <label for="guest-name">Your name</label>
-    <input id="guest-name" type="text" name="name" placeholder="Write your name" required maxlength="80">
-    <label for="guest-message">Your message</label>
-    <textarea id="guest-message" name="message" placeholder="Write your wishes for us..." required maxlength="1500"></textarea>
-    <button class="btn" type="submit" id="send-button">Send your wishes ♡</button>
-    <div class="status" id="form-status" role="status"></div>
-  </form>
-  <p class="note" style="font-size:14px">The first submission may require email activation from FormSubmit.</p>
-</section>
-<footer>With love, Abdulrahman &amp; Nadine · 3 January 2027</footer>
-</div>
+
+<header class="hero">
+    <div class="kicker">The Wedding Celebration</div>
+    <h1>Abdulrahman</h1>
+    <div class="amp">&amp;</div>
+    <h1>Nadine</h1>
+    <div class="kicker">We can't wait to celebrate with you</div>
+</header>
+
+<main class="container">
+
+    <!-- Couple Photo -->
+    <section class="card">
+        <h2>Our Moment ♡</h2>
+        <img class="photo" src="couple-photo.jpg"
+             alt="Abdulrahman and Nadine">
+    </section>
+
+    <!-- Date and Countdown -->
+    <section class="card">
+        <h2>Save the Date</h2>
+        <div class="date">Sunday, 3 January 2027</div>
+        <div class="time">3:00 PM</div>
+
+        <div class="countdown">
+            <div class="unit">
+                <strong id="days">00</strong>
+                <span>Days</span>
+            </div>
+            <div class="unit">
+                <strong id="hours">00</strong>
+                <span>Hours</span>
+            </div>
+            <div class="unit">
+                <strong id="minutes">00</strong>
+                <span>Minutes</span>
+            </div>
+            <div class="unit">
+                <strong id="seconds">00</strong>
+                <span>Seconds</span>
+            </div>
+        </div>
+
+        <p class="note" id="countdown-note">
+            Counting down to our special day ♡
+        </p>
+    </section>
+
+    <!-- January Calendar -->
+    <section class="card">
+        <h2>January 2027</h2>
+
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th>
+                    <th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td>
+                    <td>1</td><td>2</td>
+                </tr>
+                <tr>
+                    <td class="marked">3 ♥</td>
+                    <td>4</td><td>5</td><td>6</td>
+                    <td>7</td><td>8</td><td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td><td>11</td><td>12</td><td>13</td>
+                    <td>14</td><td>15</td><td>16</td>
+                </tr>
+                <tr>
+                    <td>17</td><td>18</td><td>19</td><td>20</td>
+                    <td>21</td><td>22</td><td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td><td>25</td><td>26</td><td>27</td>
+                    <td>28</td><td>29</td><td>30</td>
+                </tr>
+                <tr>
+                    <td>31</td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a class="button" href="wedding.ics" download>
+            Add to Calendar
+        </a>
+    </section>
+
+    <!-- Location -->
+    <section class="card">
+        <h2>Location</h2>
+        <p>
+            Gardenia Wedding Halls<br>
+            La Violla<br>
+            Almaza, Cairo
+        </p>
+
+        <a class="button"
+           href="https://goo.gl/maps/RuoaVfa7qMwzuK499"
+           target="_blank" rel="noopener">
+            View Location
+        </a>
+    </section>
+
+    <!-- Wishes - Sarahah -->
+    <section class="card" id="guestbook">
+        <h3>Wishes ♡</h3>
+
+        <a class="button"
+           href="https://ss0779268.sarahah.pro"
+           target="_blank"
+           rel="noopener noreferrer">
+            Send Your Wishes ♡
+        </a>
+
+        <p class="note">
+            Please don't forget to write your name ♡
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    WITH LOVE · ABDULRAHMAN &amp; NADINE
+</footer>
+
 <script>
 (function(){
-  // Cairo wedding time: 3 January 2027 at 15:00 (UTC+02:00).
-  const target = new Date('2027-01-03T15:00:00+02:00').getTime();
-  const ids = ['days','hours','minutes','seconds'];
-  function tick(){
-    let diff = target - Date.now();
-    if (diff <= 0) {
-      ids.forEach(id => document.getElementById(id).textContent = '0');
-      document.getElementById('countdown-message').textContent = 'The celebration day is here! ♥';
-      return;
-    }
-    const vals = [
-      Math.floor(diff / 86400000),
-      Math.floor((diff % 86400000) / 3600000),
-      Math.floor((diff % 3600000) / 60000),
-      Math.floor((diff % 60000) / 1000)
-    ];
-    ids.forEach((id,i) => document.getElementById(id).textContent = String(vals[i]).padStart(2,'0'));
-    document.getElementById('countdown-message').textContent = '';
-  }
-  tick(); setInterval(tick,1000);
 
-  const form = document.getElementById('guestbook');
-  form.addEventListener('submit', async function(e){
-    e.preventDefault();
-    const status = document.getElementById('form-status');
-    const button = document.getElementById('send-button');
-    if (form.querySelector('[name="_honey"]').value) return;
-    button.disabled = true; button.textContent = 'Sending…'; status.textContent = '';
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
-      if (!response.ok) throw new Error('Form submission failed');
-      status.textContent = 'Thank you! Your wish has been sent. ♥';
-      form.reset();
-    } catch(err) {
-      status.textContent = 'Sorry, the message could not be sent. Please try again later.';
-    } finally {
-      button.disabled = false; button.textContent = 'Send your wishes ♡';
+    // Wedding date: 3 January 2027, 3 PM Cairo time
+    const weddingTime =
+        Date.parse("2027-01-03T15:00:00+02:00");
+
+    function updateCountdown(){
+
+        let remaining = weddingTime - Date.now();
+
+        if(remaining <= 0){
+            document.getElementById("days").textContent = "00";
+            document.getElementById("hours").textContent = "00";
+            document.getElementById("minutes").textContent = "00";
+            document.getElementById("seconds").textContent = "00";
+
+            document.getElementById("countdown-note").textContent =
+                "Today is our special day! ♡";
+
+            return;
+        }
+
+        const days = Math.floor(remaining / 86400000);
+        const hours = Math.floor((remaining % 86400000) / 3600000);
+        const minutes = Math.floor((remaining % 3600000) / 60000);
+        const seconds = Math.floor((remaining % 60000) / 1000);
+
+        document.getElementById("days").textContent =
+            String(days).padStart(2,"0");
+
+        document.getElementById("hours").textContent =
+            String(hours).padStart(2,"0");
+
+        document.getElementById("minutes").textContent =
+            String(minutes).padStart(2,"0");
+
+        document.getElementById("seconds").textContent =
+            String(seconds).padStart(2,"0");
     }
-  });
+
+    updateCountdown();
+    setInterval(updateCountdown,1000);
+
 })();
 </script>
+
 </body>
 </html>
